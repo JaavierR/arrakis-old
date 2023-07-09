@@ -1,3 +1,6 @@
+# IDE Folders
+.idea/
+
 # build output
 dist/
 
