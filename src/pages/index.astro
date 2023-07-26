@@ -3,44 +3,57 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-    <main class="md:px-20 px-6">
-        <div class="py-10 md:pt-20">
-            <div class="relative overflow-hidden rounded-full w-10 h-10">
-                <img
-                        src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2864&q=80"
-                        alt=""
-                        class="w-full h-full object-cover object-center"
-                />
-                <div
-                        class="pointer-events-none absolute inset-0 rounded-full ring-1 ring-inset ring-slate-900/10"
-                >
-                </div>
-            </div>
+  <main class="md:px-20 px-6">
+    <div class="py-10 md:pt-20">
+      <div class="relative overflow-hidden rounded-full w-10 h-10">
+        <img
+          src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2864&q=80"
+          alt=""
+          class="w-full h-full object-cover object-center"
+        />
+        <div
+          class="pointer-events-none absolute inset-0 rounded-full ring-1 ring-inset ring-slate-900/10"
+        >
         </div>
+      </div>
+    </div>
 
-        <div class="pb-16 md:py-10 pt-1 selection:bg-transparent selection:text-pink-500 flex flex-col h-min flex-nowrap justify-start relative w-full flex-none gap-8 max-w-[60ch] lg:max-w-[45ch]">
-            <p class="text-sm/6 text-stone-900 font-light">I&apos;m Javier, a Software Engineer based in
-                Santiago, CL. I work at Segic primarly but also I teach at my <i> Alma Mater </i> one day a week. Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. Ut mattis vestibulum turpis. Pellentesque vitae lacus
-                ipsum. Ut id sagittis quam.
-            </p>
-            <div class="flex flex-start flex-col text-sm/6 text-stone-900 font-light items-center gap-2.5 flex-nowrap p-0 flex-none relative overflow-hidden h-min">
-                <div class="flex items-start flex-none flex-row flex-nowrap justify-start h-min gap-1.5 relative w-full">
-                    <p class="text-xs/6 opacity-40">Availability</p>
-                    <div class="rounded-lg h-6 px-2 flex justify-center items-center relative flex-none w-min flex-nowrap flex-row gap-2.5">
-                        <div class="outline-none rounded-lg shrink-0 justify-start transform-none flex flex-none flex-col whitespace-pre h-auto w-auto after:border after:border-stone-900/10 after:w-full after:h-full after:absolute after:left-0 after:top-0 after:rounded-[inherit] after:box-border">
-                            <p class="text-[0.625rem]/6 opacity-40">July 2023-onwards</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur nunc lorem, non rutrum
-                        lectus finibus et. Suspendisse potenti. Sed ultrices mattis enim. Aliquam erat volutpat.
-                        Phasellus elementum sit amet urna a rhoncus. Duis ac convallis nisi, fermentum commodo ex. Send
-                        me an email →
-                    </p>
-                </div>
+    <div
+      class="pb-16 md:py-10 pt-1 selection:bg-transparent selection:text-pink-500 flex flex-col h-min flex-nowrap justify-start relative w-full flex-none gap-8 max-w-[60ch] lg:max-w-[45ch]"
+    >
+      <p class="text-sm/6 text-stone-900 font-light">
+        I&apos;m Javier, a Software Engineer based in Santiago, CL. I work at
+        Segic primarly but also I teach at my <i> Alma Mater</i> one day a week.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mattis vestibulum
+        turpis. Pellentesque vitae lacus ipsum. Ut id sagittis quam.
+      </p>
+      <div
+        class="flex flex-start flex-col text-sm/6 text-stone-900 font-light items-center gap-2.5 flex-nowrap p-0 flex-none relative overflow-hidden h-min"
+      >
+        <div
+          class="flex items-start flex-none flex-row flex-nowrap justify-start h-min gap-1.5 relative w-full"
+        >
+          <p class="text-xs/6 opacity-40">Availability</p>
+          <div
+            class="rounded-lg h-6 px-2 flex justify-center items-center relative flex-none w-min flex-nowrap flex-row gap-2.5"
+          >
+            <div
+              class="outline-none rounded-lg shrink-0 justify-start transform-none flex flex-none flex-col whitespace-pre h-auto w-auto after:border after:border-stone-900/10 after:w-full after:h-full after:absolute after:left-0 after:top-0 after:rounded-[inherit] after:box-border"
+            >
+              <p class="text-[0.625rem]/6 opacity-40">July 2023-onwards</p>
             </div>
+          </div>
         </div>
-    </main>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            efficitur nunc lorem, non rutrum lectus finibus et. Suspendisse
+            potenti. Sed ultrices mattis enim. Aliquam erat volutpat. Phasellus
+            elementum sit amet urna a rhoncus. Duis ac convallis nisi, fermentum
+            commodo ex. Send me an email →
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
 </Layout>
