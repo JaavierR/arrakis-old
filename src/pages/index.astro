@@ -1,4 +1,5 @@
 ---
+import "../styles/base.css";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -7,7 +8,7 @@ import Layout from "../layouts/Layout.astro";
     <div class="py-10 md:pt-20">
       <div class="relative overflow-hidden rounded-full w-10 h-10">
         <img
-          src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2864&q=80"
+          src="https://avatars.githubusercontent.com/u/4650238?v=4"
           alt=""
           class="w-full h-full object-cover object-center"
         />
@@ -21,14 +22,19 @@ import Layout from "../layouts/Layout.astro";
     <div
       class="pb-16 md:py-10 pt-1 selection:bg-transparent selection:text-pink-500 flex flex-col h-min flex-nowrap justify-start relative w-full flex-none gap-8 max-w-[60ch] lg:max-w-[45ch]"
     >
-      <p class="text-sm/6 text-stone-900 font-light">
-        I&apos;m Javier, a Software Engineer based in Santiago, CL. I work at
-        Segic primarly but also I teach at my <i> Alma Mater</i> one day a week.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mattis vestibulum
-        turpis. Pellentesque vitae lacus ipsum. Ut id sagittis quam.
-      </p>
+      <div>
+        <p class="text-sm/6 text-stone-900">
+          I&apos;m Javier, a Software Engineer based in Santiago, CL.
+        </p>
+        <p class="text-sm/6 text-stone-900">
+          I work at Segic primarly but also I teach at my <i> Alma Mater</i> about
+          Databases and IA primarly. Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Ut mattis vestibulum turpis. Pellentesque vitae lacus ipsum. Ut id
+          sagittis quam.
+        </p>
+      </div>
       <div
-        class="flex flex-start flex-col text-sm/6 text-stone-900 font-light items-center gap-2.5 flex-nowrap p-0 flex-none relative overflow-hidden h-min"
+        class="flex flex-start flex-col text-sm/6 text-stone-900 items-center gap-2.5 flex-nowrap p-0 flex-none relative overflow-hidden h-min"
       >
         <div
           class="flex items-start flex-none flex-row flex-nowrap justify-start h-min gap-1.5 relative w-full"
