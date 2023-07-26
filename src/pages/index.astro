@@ -36,7 +36,7 @@ import Layout from "../layouts/Layout.astro";
       <div
         class="flex flex-start flex-col text-sm/6 text-stone-900 items-center gap-2.5 flex-nowrap p-0 flex-none relative overflow-hidden h-min"
       >
-        <div
+        <!-- <div
           class="flex items-start flex-none flex-row flex-nowrap justify-start h-min gap-1.5 relative w-full"
         >
           <p class="text-xs/6 opacity-40">Availability</p>
@@ -49,14 +49,16 @@ import Layout from "../layouts/Layout.astro";
               <p class="text-[0.625rem]/6 opacity-40">July 2023-onwards</p>
             </div>
           </div>
-        </div>
+        </div> -->
         <div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
             efficitur nunc lorem, non rutrum lectus finibus et. Suspendisse
             potenti. Sed ultrices mattis enim. Aliquam erat volutpat. Phasellus
             elementum sit amet urna a rhoncus. Duis ac convallis nisi, fermentum
-            commodo ex. Send me an email →
+            commodo ex. <a href="#" class="underline hover:text-stone-500"
+              >Send me an email →</a
+            >
           </p>
         </div>
       </div>
