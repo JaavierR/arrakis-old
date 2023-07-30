@@ -6,13 +6,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: [
-          "X",
-          {
-            ...defaultTheme.fontFamily.sans,
-            fontFeatureSettings: '"ss04"',
-          },
-        ],
+        sans: ["Söhne", ...defaultTheme.fontFamily.sans],
       },
     },
   },
