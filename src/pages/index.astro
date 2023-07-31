@@ -1,6 +1,14 @@
 ---
-import "../styles/base.css";
 import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+
+const me = {
+  name: "Javier Reyes",
+  username: "leturques",
+  country: "Chile",
+  role: "Software Engineer",
+  image: "/images/me.jpg",
+};
 ---
 
 <Layout title="Welcome to Astro.">
@@ -9,7 +17,7 @@ import Layout from "../layouts/Layout.astro";
       <div class="relative overflow-hidden rounded-full w-16 h-16">
         <img
           src="https://avatars.githubusercontent.com/u/4650238?v=4"
-          alt=""
+          alt="profile picture from github of leturques"
           class="w-full h-full object-cover object-center"
         />
         <div
@@ -20,32 +28,61 @@ import Layout from "../layouts/Layout.astro";
     </div>
 
     <div
-      class="pb-16 md:pb-10 pt-1 selection:bg-transparent selection:text-pink-500 flex flex-col h-min flex-nowrap justify-start relative flex-none gap-8 max-w-[60ch] w-[clamp(45ch,75%,60ch)] text-sm/6 text-[rgb(27,_28,_29)] tracking-[normal] [font-feature-settings:'ss02'] font-normal"
+      class="pb-16 md:pb-10 pt-1 h-min relative flex-none grid lg:grid-cols-2 gap-8"
     >
-      <div>
-        <p>I&lsquo;m Javier, a Software Engineer based in Santiago, CL.</p>
-        <p>
-          I work at Segic primarly but also I teach at my <i>Alma Mater</i> about
-          Databases and IA primarly. In my free time I like to take different kind
-          of projects to explore new technologies, learn new things &amp; polish
-          my skills.
-        </p>
-      </div>
       <div
-        class="flex flex-start flex-col items-center gap-2.5 flex-nowrap p-0 flex-none relative overflow-hidden h-min"
+        class="w-[clamp(45ch,75%,60ch)] selection:bg-transparent text-sm/6 text-[rgb(27,_28,_29)] selection:text-pink-500 flex flex-col gap-8 tracking-[normal] [font-feature-settings:'ss02'] font-normal"
       >
         <div>
+          <p>I&lsquo;m Javier, a Software Engineer based in Santiago, CL.</p>
+          <p>
+            I work at Segic primarly but also I teach at my <i>Alma Mater</i> about
+            Databases and IA primarly. In my free time I like to take different kind
+            of projects to explore new technologies, learn new things &amp; polish
+            my skills.
+          </p>
+        </div>
+        <div
+          class="flex flex-start flex-col items-center gap-2.5 flex-nowrap p-0 flex-none relative overflow-hidden h-min"
+        >
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
             efficitur nunc lorem, non rutrum lectus finibus et. Suspendisse
             potenti. Sed ultrices mattis enim. Aliquam erat volutpat. Phasellus
             elementum sit amet urna a rhoncus. Duis ac convallis nisi, fermentum
-            commodo ex. <a href="#" class="underline hover:text-stone-500"
+            commodo ex. <a
+              href="#"
+              class="underline hover:text-stone-500 whitespace-nowrap"
               >Send me an email →</a
             >
           </p>
         </div>
       </div>
+
+      <div id="personal-card" class="max-w-xs lg:mx-auto">
+        <Card user={me} />
+      </div>
     </div>
   </main>
 </Layout>
+
+<script>
+  (document.getElementById("personal-card") as HTMLElement).onmousemove = (
+    e
+  ) => {
+    const rect = (
+        document.getElementById("personal-card") as HTMLElement
+      ).getBoundingClientRect(),
+      x = e.clientX - rect.left,
+      y = e.clientY - rect.top;
+
+    (document.getElementById("personal-card") as HTMLElement).style.setProperty(
+      "--x",
+      x + "px"
+    );
+    (document.getElementById("personal-card") as HTMLElement).style.setProperty(
+      "--y",
+      y + "px"
+    );
+  };
+</script>
