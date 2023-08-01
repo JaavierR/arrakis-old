@@ -12,7 +12,7 @@
   "dependencies": {
     "@astrojs/tailwind": "4.0.0",
     "astro": "2.9.6",
-    "tailwindcss": "3.3.3"
+    "tailwindcss": "0.0.0-insiders.a93c61f"
   },
   "devDependencies": {
     "typescript": "5.1.6"
