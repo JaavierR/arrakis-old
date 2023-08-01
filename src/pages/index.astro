@@ -31,7 +31,7 @@ const me = {
       class="pb-16 md:pb-10 pt-1 h-min relative flex-none grid lg:grid-cols-2 gap-8"
     >
       <div
-        class="w-[clamp(45ch,75%,60ch)] selection:bg-transparent text-sm/6 text-[rgb(27,_28,_29)] selection:text-pink-500 flex flex-col gap-8 tracking-[normal] [font-feature-settings:'ss02'] font-normal"
+        class="w-[clamp(45ch,75%,60ch)] selection:bg-transparent text-sm/6 text-[rgb(27,_28,_29)] selection:text-pink-500 flex flex-col gap-8 tracking-[normal] [font-feature-settings:'ss02'] mt-6 font-normal"
       >
         <div>
           <p>I&lsquo;m Javier, a Software Engineer based in Santiago, CL.</p>
@@ -47,10 +47,10 @@ const me = {
         >
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            efficitur nunc lorem, non rutrum lectus finibus et. Suspendisse
-            potenti. Sed ultrices mattis enim. Aliquam erat volutpat. Phasellus
-            elementum sit amet urna a rhoncus. Duis ac convallis nisi, fermentum
-            commodo ex. <a
+            efficitur nunc lorem, <b>non rutrum lectus finibus et</b>.
+            Suspendisse potenti. Sed ultrices mattis enim. Aliquam erat
+            volutpat. Phasellus elementum sit amet urna a rhoncus. Duis ac
+            convallis nisi, fermentum commodo ex. <a
               href="#"
               class="underline hover:text-stone-500 whitespace-nowrap"
               >Send me an email →</a
@@ -59,7 +59,7 @@ const me = {
         </div>
       </div>
 
-      <div id="personal-card" class="lg:mx-auto">
+      <div id="personal-card" class="max-w-[18.125rem]">
         <Card user={me} />
       </div>
     </div>
