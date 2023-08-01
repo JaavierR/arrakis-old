@@ -34,4 +34,20 @@
     font-display: swap;
     font-style: italic;
   }
+
+  @font-face {
+    font-family: "Söhne";
+    src: url("/fonts/soehne-dreiviertelfett.woff2") format("woff2");
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Söhne";
+    src: url("/fonts/soehne-dreiviertelfett-italic.woff2") format("woff2");
+    font-weight: 700;
+    font-display: swap;
+    font-style: italic;
+  }
 }
